@@ -12,15 +12,15 @@ public class UniqueChars {
      */
     public static String uniqueChars(String s) {
 
-        //
+        // Sets new string
         String newS = "";
 
         for (int i = 0; i < s.length(); i++) {
 
-            //
+            // Checks if the letter has already appeared
             if (newS.indexOf(s.charAt(i)) == -1) {
 
-                //
+                // Adds the letter to the new word
                 newS += s.charAt(i);
             }
         }

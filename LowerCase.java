@@ -12,14 +12,15 @@ public class LowerCase {
      */
     public static String lowerCase(String s) {
 
-        // 
+        // Set new string
         String newS = "";
+
         for (int i = 0; i < s.length(); i++) {
 
-            //
+            // Set x to a certain letter
             int x = s.charAt(i);
 
-            //
+            // Check is it a capital letter
             if (x > 64 && x < 91) {
                 newS += (char) (x + 32);
             } else {
