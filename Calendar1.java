@@ -42,7 +42,7 @@ public class Calendar1 {
 			debugDaysCounter++;
 			//// If you want to stop the loop after n days, replace the condition of the
 			//// if statement with the condition (debugDaysCounter == n)
-			if (false) {
+			if (debugDaysCounter == 730) {
 				break;
 			}
 		}
@@ -66,14 +66,14 @@ public class Calendar1 {
 		// Checks is the month is over
 		if (dayOfMonth == nDaysInMonth) {
 			month++;
-			nDaysInMonth = nDaysInMonth(month, year);
-			dayOfMonth = 1;
 
 			// Checks if the year is over
 			if (month == 13) {
 				month = 1;
 				year++;
 			}
+			nDaysInMonth = nDaysInMonth(month, year);
+			dayOfMonth = 1;
 		} else {
 			dayOfMonth++;
 		}
