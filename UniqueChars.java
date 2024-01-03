@@ -18,10 +18,17 @@ public class uniquechars {
         for (int i = 0; i < s.length(); i++) {
 
             // Checks if the letter has already appeared
+
             if (newS.indexOf(s.charAt(i)) == -1) {
 
                 // Adds the letter to the new word
                 newS += s.charAt(i);
+            } else {
+
+                // Check if the character is space
+                if (s.charAt(i) == ' ') {
+                    newS += s.charAt(i);
+                }
             }
         }
 
