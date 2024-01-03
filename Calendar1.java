@@ -42,7 +42,7 @@ public class Calendar1 {
 			debugDaysCounter++;
 			//// If you want to stop the loop after n days, replace the condition of the
 			//// if statement with the condition (debugDaysCounter == n)
-			if (debugDaysCounter == 730) {
+			if (false) {
 				break;
 			}
 		}
