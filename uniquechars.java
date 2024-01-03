@@ -24,7 +24,7 @@ public class uniquechars {
                 // Adds the letter to the new word
                 newS += s.charAt(i);
             } else {
-                if (newS.indexOf(s.charAt(i)) == ' ') {
+                if (s.charAt(i) == ' ') {
                     newS += s.charAt(i);
                 }
             }
